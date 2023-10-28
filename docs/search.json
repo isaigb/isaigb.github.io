@@ -11,7 +11,7 @@
     "href": "skills.html",
     "title": "Data and Programming",
     "section": "",
-    "text": "Machine Learning: Python (scikit-learn, imbalanced-learn, statsmodels, pandas, NumPy, Matplotlib, TensorFlow)\nProgramming: Python, R, STATA, SPSS\nReporting and Data Visualization: Jupyter Notebook, Matplotlib , R Markdown, ggplot2, Quarto\nVersion Control: Git, GitHub\nData Collection: Survey development (RedCap, SurveyMonkey, SurveyGizmo), focus groups, interviews in English, Spanish\nStatistical Expertise: Causal Inference, Statistical Modelling, Machine Learning, Econometrics\nAn aside, I am fascinated by understanding real world relationships from data. The messier and more complex the problem seems, the more intrigued I am to make sense of it."
+    "text": "An aside, I am fascinated by understanding real world relationships from data. The messier and more complex the problem seems, the more intrigued I am to make sense of it.\nMachine Learning: Python (scikit-learn, imbalanced-learn, statsmodels, pandas, NumPy, Matplotlib, TensorFlow)\nProgramming: Python, R, STATA, SPSS\nReporting and Data Visualization: Jupyter Notebook, Matplotlib , R Markdown, ggplot2, Quarto\nVersion Control: Git, GitHub\nData Collection: Survey development (RedCap, SurveyMonkey, SurveyGizmo), focus groups, interviews in English, Spanish\nStatistical Expertise: Causal Inference, Statistical Modelling, Machine Learning, Econometrics"
   },
   {
     "objectID": "research.html",

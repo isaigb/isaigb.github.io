@@ -10,9 +10,9 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/isaigarciabaza/
-#    - icon: file-earmark-pdf-fill
-#      text: View Resume
-#      href: web-link-to-pdf-file.pdf?inline=true
+    - icon: file-earmark-pdf-fill
+      text: View Resume
+      href: https://github.com/isaigb/isaigb.github.io/blob/main/cv/Garcia-Baza_cv_single.pdf?inline=true
 #    - icon: cloud-download-fill
 #      text: Download Resume
 #      href: web-link-to-pdf-file.pdf?inline=false
