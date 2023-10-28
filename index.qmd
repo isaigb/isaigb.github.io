@@ -1,0 +1,24 @@
+---
+title: "Meet Isai"
+about:
+  template: solana
+#  image: images/profile.jpeg
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/isaigb
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/isaigarciabaza/
+#    - icon: file-earmark-pdf-fill
+#      text: View Resume
+#      href: web-link-to-pdf-file.pdf?inline=true
+#    - icon: cloud-download-fill
+#      text: Download Resume
+#      href: web-link-to-pdf-file.pdf?inline=false
+
+---
+
+Hi! My name is Isai (think Açaí &rarr; Içaí). I'm currently a student at the UNC School of Education working toward a PhD in Education Policy with a PhD minor in Computer Science. If I'm not at my desk you can find me jogging, hiking a mountain trail, kayaking, or back at my desk digging for gold in Deep Rock Galactic or Minecraft.
+
+![](images/profile.jpg)
