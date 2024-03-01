@@ -8,7 +8,7 @@ website:
     left:
       - href: index.qmd
       - research.qmd
-      - skills.qmd
+      - resume.qmd
 
 format:
   html:

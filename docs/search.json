@@ -4,14 +4,7 @@
     "href": "index.html",
     "title": "Meet Isai",
     "section": "",
-    "text": "Hi! My name is Isai (think Açaí → Içaí). I’m currently a student at the UNC School of Education working toward a PhD in Education Policy with a PhD minor in Computer Science. If I’m not at my desk you can find me jogging, hiking a mountain trail, kayaking, or back at my desk digging for gold in Deep Rock Galactic or Minecraft."
-  },
-  {
-    "objectID": "skills.html",
-    "href": "skills.html",
-    "title": "Data and Programming",
-    "section": "",
-    "text": "An aside, I am fascinated by understanding real world relationships from data. The messier and more complex the problem seems, the more intrigued I am to make sense of it.\nMachine Learning: Python (scikit-learn, imbalanced-learn, statsmodels, pandas, NumPy, Matplotlib, TensorFlow)\nProgramming: Python, R, STATA, SPSS\nReporting and Data Visualization: Jupyter Notebook, Matplotlib , R Markdown, ggplot2, Quarto\nVersion Control: Git, GitHub\nData Collection: Survey development (RedCap, SurveyMonkey, SurveyGizmo), focus groups, interviews in English, Spanish\nStatistical Expertise: Causal Inference, Statistical Modelling, Machine Learning, Econometrics"
+    "text": "Hi! My name is Isai (think Açaí → Içaí). I’m currently a student at the UNC School of Education working toward a PhD in Education Policy with a PhD minor in Computer Science. If I’m not working with data you can find me jogging, hiking a mountain trail, kayaking, digging for gold in Deep Rock Galactic or ensuring the factory grows in Factorio."
   },
   {
     "objectID": "research.html",
@@ -19,5 +12,12 @@
     "title": "Research Interests",
     "section": "",
     "text": "I’m interested in the role of higher education for socioeconomic mobility of first generation students and students of color and the application of causal inference and machine learning methods to these questions.\nSpecifically I’m interested in:\n\nIdentifying causal mechanisms for the under-representation of women and students of color in the STEM pipeline.\nUnderstanding role of unequal distribution of opportunity on college admission, persistence and completion.\nLong term outcomes of students after they leave higher education as a function of major choice, college choice, and debt burden."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "old &lt;iframe width=\"90%\" height=\"500px\" src=\"cv-resume/isaigb-resume.pdf\" title=\"Isai's Resume\"&gt;&lt;/iframe&gt;\n``"
   }
 ]
