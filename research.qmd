@@ -6,6 +6,6 @@ I'm interested in the role of higher education for socioeconomic mobility of fir
 
 Specifically I'm interested in:
 
-  - Identifying causal mechanisms for the under-representation of women and students of color in the STEM pipeline.
+  - Understanding the factors associated with the under-representation of women and students of color in the STEM pipeline.
   - Understanding role of unequal distribution of opportunity on college admission, persistence and completion.
   - Long term outcomes of students after they leave higher education as a function of major choice, college choice, and debt burden.
