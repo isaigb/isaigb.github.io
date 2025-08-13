@@ -13,6 +13,9 @@ about:
     - icon: file-earmark-pdf-fill
       text: View Resume
       href: resume.qmd
+    - icon: envelope-at-fill
+      text: Contact
+      href: mailto:isaigarciabaza@gmail.com
 #    - icon: cloud-download-fill
 #      text: Download Resume
 #      href: web-link-to-pdf-file.pdf?inline=false
