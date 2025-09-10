@@ -7,7 +7,6 @@ website:
   navbar:
     left:
       - href: index.qmd
-      - research.qmd
       - resume.qmd
 
 format:
