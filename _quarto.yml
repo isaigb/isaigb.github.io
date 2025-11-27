@@ -8,6 +8,8 @@ website:
     left:
       - href: index.qmd
       - resume.qmd
+  cookie-consent: true
+  google-analytics: G-0CE131HDEB
 
 format:
   html:
