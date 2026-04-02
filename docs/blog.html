@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Meet Isai – Isai Garcia-Baza</title>
+<title>Blog – Isai Garcia-Baza</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,12 +33,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -71,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0CE131HDEB"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -99,11 +131,40 @@ cookieconsent.run({
 </script> 
   
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -121,7 +182,7 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Meet Isai</span></a>
   </li>  
   <li class="nav-item">
@@ -129,7 +190,7 @@ cookieconsent.run({
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link active" href="./blog.html" aria-current="page"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -143,49 +204,85 @@ cookieconsent.run({
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2F1c2FsJTIwSW5mZXJlbmNl">Causal Inference <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2hpbGkncw==">Chili's <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R29vZ2xlJTIwVHJlbmRz">Google Trends <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGlrVG9r">TikTok <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="images/profile.jpg" class="about-image
-  rounded " style="width: 20em;">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Meet Isai</h1>
+<h1 class="title">Blog</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
+
+    
+  
+    
   </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://github.com/isaigb" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="https://www.linkedin.com/in/isaigarciabaza/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="/resume.html" class="about-link" rel="" target="">
-    <i class="bi bi-file-earmark-pdf-fill"></i>
-     <span class="about-link-text">View Resume</span>
-  </a>
-  <a href="mailto:isaigarciabaza@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope-at-fill"></i>
-     <span class="about-link-text">Contact</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>I am a data scientist with a strong background in applied machine learning, natural language processing, and statistical analysis. My work combines technical rigor with a problem-solving mindset. I enjoy taking complex, ambiguous challenges and designing clear, data-driven solutions that create real impact.</p>
-<p>I thrive on open-ended challenges and am obsessive about solving the problems I take on. Whether the task calls for a quick, scrappy prototype to prove feasibility or a carefully engineered, production-ready pipeline, I can deliver. I am just as comfortable being the primary technical lead who builds solutions from the ground up as I am embedding into a highly technical team and contributing at a deep level. My approach is proactive and resourceful: I seek out documentation, track down maintainers when information is scarce, learn the data inside and out, and make sure I understand the problem space before proposing solutions. This “fire-and-forget” mentality means I don’t just complete assigned tasks, I drive them forward relentlessly until they’re solved, often uncovering new opportunities along the way. Above all, I aim to be the kind of data scientist who elevates any team I join: adaptable, persistent, and able to translate between technical execution and organizational impact.</p>
-<p>Most recently, I developed end-to-end modeling pipelines using Python, Hugging Face libraries, scikit-learn, and imbalanced-learn, supported by SQL for data extraction and preparation. My work introduced new analytical capabilities to my division allowing non-technical team members to gain insight from text classifiers in a user-friendly interface. My presentation of this work to leadership was met with enthusiasm. Alongside this, I am collaborating with a professor on research that extracts and classifies images from digitized yearbooks. This project involves image segmentation, classification with vision–language models served both via APIs and locally hosted with Ollama, and the development of a pipeline to automatically ingest scanned yearbooks and extract images for downstream analysis. To handle the complexity of mapping outputs to detailed survey responses, I have applied prompt engineering and few-shot learning to align model behavior with human reviewers.</p>
 
 
-</main></div>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Q2F1c2FsJTIwSW5mZXJlbmNlJTJDQ2hpbGkncyUyQ0dvb2dsZSUyMFRyZW5kcyUyQ1Rpa1Rvaw==" data-listing-date-sort="1775102400000" data-listing-file-modified-sort="1775143072006" data-listing-date-modified-sort="1775102400000" data-listing-reading-time-sort="12" data-listing-word-count-sort="2312">
+<div class="thumbnail"><a href="./posts/chilis-tiktok-search/index.html" class="no-external">
+
+<p class="card-img-top"><img loading='lazy' src="posts\chilis-tiktok-search\figs\1_linear_time_trend.svg"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/chilis-tiktok-search/index.html" class="no-external">Did TikTok Cause Chili’s Comeback?</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2F1c2FsJTIwSW5mZXJlbmNl'); return false;">Causal Inference</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2hpbGkncw=='); return false;">Chili's</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R29vZ2xlJTIwVHJlbmRz'); return false;">Google Trends</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VGlrVG9r'); return false;">TikTok</div>
+
 </div>
- <!-- /main -->
+<div class="delink listing-description"><a href="./posts/chilis-tiktok-search/index.html" class="no-external">
+<p>Chili’s Triple Dipper appetizer went viral on TikTok in April-May 2024 leading to a large jump in sales that quarter. In this blog I analyze whether that event had measurable long-lasting impacts on customer search interest in the restaurant.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/chilis-tiktok-search/index.html" class="no-external">
+<div class="listing-date">
+Apr 2, 2026
+</div>
+<div class="listing-author">
+Isai Garcia-Baza
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

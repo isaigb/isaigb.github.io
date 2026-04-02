@@ -1,1 +1,30 @@
 /* css styles */
+/* Dots for visual breaks between text */
+.dots {
+  text-align: center;
+  margin: 1.5rem 0;
+  line-height: 1;
+}
+
+.dots::after {
+  content: "· · ·";
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: #000000;
+}
+
+/*Author's note and removing extra padding afterward*/
+.author-note {
+  background-color: #f0f7ff;
+  border-left: 5px solid #1a3a5f;
+  padding: 1.2rem 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: #2c3e50;
+}
+
+.author-note p:last-child {
+  margin-bottom: 0;
+}
