@@ -1,0 +1,8 @@
+# Isai Garcia-Baza
+
+## Pages
+
+- [Resume](resume.llms.md)
+- [Meet Isai](index.llms.md)
+- [Blog](blog.llms.md)
+- [Did TikTok Cause Chili's Comeback?](posts/chilis-tiktok-search/index.llms.md)
